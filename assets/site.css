@@ -99,3 +99,14 @@ section.block{padding:32px 0}
 .hero h1 .red{background:var(--yellow);padding:0 12px;border-radius:6px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .btn.yellow{background:var(--yellow);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
 .btn.yellow:hover{color:var(--ink)}
+/* desktop wallpapers + posts (22 Nov) */
+.walls-desk{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:20px}
+.wall.desk img{aspect-ratio:16/9}
+@media (max-width:600px){.walls-desk{grid-template-columns:1fr}}
+.posts{display:flex;flex-direction:column;gap:24px}
+.post{display:flex;flex-wrap:wrap;gap:24px;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:20px;align-items:flex-start}
+.post img{flex:0 1 320px;width:320px;max-width:100%;border:2px solid var(--ink);border-radius:10px}
+.post .body{flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.post h3{font-size:26px;font-weight:800}
+.post p{margin:0;font-size:18px;line-height:1.75}
+.post .meta{font-size:14px;color:var(--muted)}

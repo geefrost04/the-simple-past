@@ -163,3 +163,22 @@ section.block{padding-top:32px;padding-bottom:32px}
 .more-head h2{font-size:28px;font-weight:900}
 .more-head p{margin:0;opacity:.7;font-size:16px}
 @media (max-width:600px){.more-sec{margin-top:28px;padding-top:36px}.more-head h2{font-size:24px}}
+
+/* shop product (23 Nov) */
+.product{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:36px;align-items:start}
+.p-main{width:100%;display:block;background:#fff;border:2px solid var(--ink);border-radius:16px;box-shadow:6px 6px 0 var(--ink)}
+.p-thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.p-thumbs button{padding:0;border:2px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;cursor:pointer;aspect-ratio:1}
+.p-thumbs button img{width:100%;height:100%;object-fit:cover;display:block}
+.p-thumbs button.on{border-color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+.p-info{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.p-title{font-size:clamp(30px,4vw,42px);font-weight:900}
+.p-sub{margin:0;font-size:18px}
+.p-price{display:flex;align-items:baseline;gap:12px}.p-price b{font-family:Prompt,sans-serif;font-size:40px;font-weight:900}.p-price span{opacity:.7}
+.shop-buy{width:100%;text-align:center;font-size:20px;box-shadow:4px 4px 0 var(--ink)}
+.shop-buy[aria-disabled]{opacity:.7;box-shadow:none;cursor:default}
+.p-member{width:100%;box-sizing:border-box;background:#fff;border:2px dashed var(--ink);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.p-member b{font-family:Prompt,sans-serif;font-size:19px}.p-member p{margin:0;font-size:16px}
+.p-list{margin:4px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:16px}
+.p-note{margin:0;font-size:14px;opacity:.75}
+@media (max-width:860px){.product{grid-template-columns:1fr;gap:24px}}

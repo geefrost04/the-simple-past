@@ -40,15 +40,44 @@ document.addEventListener('click',function(ev){
 </header>
 <main>
 <section class="wrap block">
-  <span class="soon">เร็วๆ นี้</span>
-  <h1 style="font-weight:900;font-size:clamp(36px,6vw,56px);margin-top:12px">ร้านค้า The Simple Past</h1>
-  <p style="font-size:20px;max-width:620px">ของจากช่องเราเอง ทำจากภาพและเรื่องในแฟ้มที่คุณชอบ กำลังเตรียมอยู่ครับ</p>
-  <div class="grid" style="margin-top:20px"><div class="card"><div class="ph">[ภาพสินค้า]</div><div class="body"><span class="t">[ชื่อสินค้า 1]</span><span class="meta">เร็วๆ นี้</span></div></div><div class="card"><div class="ph">[ภาพสินค้า]</div><div class="body"><span class="t">[ชื่อสินค้า 2]</span><span class="meta">เร็วๆ นี้</span></div></div><div class="card"><div class="ph">[ภาพสินค้า]</div><div class="body"><span class="t">[ชื่อสินค้า 3]</span><span class="meta">เร็วๆ นี้</span></div></div></div>
+  <h1 style="font-weight:900;font-size:clamp(34px,6vw,52px)"><span class="hl">ร้านค้า</span></h1>
+  <p style="font-size:19px;max-width:640px;margin-top:10px">ของจากช่องเราเอง วาดด้วยลายการ์ตูนเดียวกับในคลิป</p>
 </section>
-<section class="wrap block"><div class="box">
-  <div class="txt"><h3 style="font-size:22px">อยากรู้ก่อนใครตอนร้านเปิด</h3><p style="margin:6px 0 0;font-size:17px">ติดตามเพจไว้ เปิดร้านเมื่อไหร่ บอกในเพจก่อนเลยครับ</p></div>
-  <a class="btn fb" href="https://www.facebook.com/100082024890340" target="_blank" rel="noopener">ติดตามบน Facebook</a>
-</div></section>
+<section class="wrap block">
+  <article class="product">
+    <div class="p-gallery">
+      <img class="p-main" id="pmain" src="assets/shop/xmas_mockup_ipad_planner.jpg" alt="สติกเกอร์ Christmas Planner บนหน้าแพลนเนอร์ใน iPad">
+      <div class="p-thumbs">
+        <button type="button" data-src="assets/shop/xmas_mockup_ipad_planner.jpg" class="on"><img src="assets/shop/xmas_mockup_ipad_planner.jpg" alt="ตัวอย่างใน iPad แนวนอน"></button>
+        <button type="button" data-src="assets/shop/xmas_mockup_ipad_portrait_gifts.jpg"><img src="assets/shop/xmas_mockup_ipad_portrait_gifts.jpg" alt="ตัวอย่างหน้าวางแผนของขวัญ"></button>
+        <button type="button" data-src="assets/shop/xmas_cover_mockup.jpg"><img src="assets/shop/xmas_cover_mockup.jpg" alt="ปกชุดสติกเกอร์"></button>
+        <button type="button" data-src="assets/shop/xmas_contents_grid_38.jpg"><img src="assets/shop/xmas_contents_grid_38.jpg" alt="สติกเกอร์ทั้ง 38 ชิ้น"></button>
+      </div>
+    </div>
+    <div class="p-info">
+      <span class="tag">สติกเกอร์ดิจิทัล · ไฟล์ PNG</span>
+      <h2 class="p-title">Christmas Planner</h2>
+      <p class="p-sub">สติกเกอร์วางแผนเดือนธันวาคม 38 ชิ้น พร้อมตัวละครประวัติศาสตร์ฉลองคริสต์มาส</p>
+      <div class="p-price"><b>฿39</b><span>จ่ายครั้งเดียว โหลดได้ทันที</span></div>
+      <span class="btn white shop-buy" aria-disabled="true">เปิดขายเร็วๆ นี้ · ฿39</span>
+      <div class="p-member">
+        <b>สมาชิกเพจได้ฟรี</b>
+        <p>สมัครสมาชิก The Simple Past เดือนละ ฿35 รับสติกเกอร์ทุกชุดฟรี ถูกกว่าซื้อชุดเดียว และชื่อของคุณจะขึ้นขอบคุณท้ายคลิป</p>
+        <a class="btn fb" href="https://www.facebook.com/100082024890340/subscribe/" target="_blank" rel="noopener">สมัครสมาชิก ฿35/เดือน</a>
+      </div>
+      <ul class="p-list">
+        <li><b>หัวข้อ 6 · นับถอยหลัง 2</b> แบ่งหน้า และนับวันถึงคริสต์มาส</li>
+        <li><b>ของขวัญ 3 · ไอคอนวัน 3</b> ป้ายของขวัญมีช่องเขียน ปาร์ตี้ จับฉลาก กลับบ้าน</li>
+        <li><b>ตราประทับ 4 · อารมณ์ 5</b> ทำแล้ว กำลังทำ รอ ยกเลิก และหน้าอารมณ์รายวัน</li>
+        <li><b>โน้ต 3 · วาชิเทป 2 · เป้าหมายปี 2027 อีก 2</b></li>
+        <li><b>ตัวละคร 8</b> ควีนวิกตอเรีย ดิกเกนส์ นักบุญนิโคลัส นโปเลียน ลินคอล์น คลีโอพัตรา ซีซาร์ โมซาร์ท</li>
+      </ul>
+      <p class="p-note">ใช้ได้กับ GoodNotes, Notability และแอปจดที่นำเข้ารูป PNG ได้ · มีวิธีใช้ภาษาไทยในไฟล์ · ใช้ส่วนตัวเท่านั้น ห้ามขายต่อ</p>
+    </div>
+  </article>
+</section>
+<script>document.querySelectorAll('.p-thumbs button').forEach(function(b){b.addEventListener('click',function(){document.getElementById('pmain').src=b.dataset.src;document.querySelectorAll('.p-thumbs button').forEach(function(x){x.classList.toggle('on',x===b)});});});</script>
+
 </main>
 <footer class="foot-bar">
   <div class="wrap">

@@ -155,3 +155,11 @@ section.block{padding-top:32px;padding-bottom:32px}
 .home-walls .wall .foot{flex-direction:column;align-items:stretch;gap:8px;font-size:14px}
 .home-walls .wall .foot .btn{text-align:center}
 @media (max-width:600px){.home-walls{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}}
+
+/* separate "เปิดแฟ้มต่อ" from the section above (23 Nov) */
+.more-sec{position:relative;margin-top:40px;padding-top:44px;border-top:3px dashed var(--ink)}
+.more-sec::before{content:"✂";position:absolute;top:-17px;left:24px;background:var(--paper);padding:0 8px;font-size:22px;line-height:30px}
+.more-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:18px}
+.more-head h2{font-size:28px;font-weight:900}
+.more-head p{margin:0;opacity:.7;font-size:16px}
+@media (max-width:600px){.more-sec{margin-top:28px;padding-top:36px}.more-head h2{font-size:24px}}

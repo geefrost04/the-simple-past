@@ -12,6 +12,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@600;800;900&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4GK13D99H3"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-4GK13D99H3');
+document.addEventListener('click',function(ev){
+  var a=ev.target.closest('a,.player');if(!a)return;
+  if(a.classList.contains('player')){gtag('event','video_play',{video_id:a.dataset.yt,page_path:location.pathname});return;}
+  var h=a.getAttribute('href')||'';
+  if(a.hasAttribute('download')){gtag('event','wallpaper_download',{file_name:h.split('/').pop(),page_path:location.pathname});return;}
+  if(h.indexOf('facebook.com')>-1)gtag('event','follow_click',{platform:'facebook',page_path:location.pathname});
+  else if(h.indexOf('youtube.com')>-1)gtag('event','follow_click',{platform:'youtube',page_path:location.pathname});
+});
+</script>
 </head>
 <body>
 <header class="wrap top">

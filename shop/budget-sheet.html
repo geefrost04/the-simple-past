@@ -51,7 +51,7 @@ document.addEventListener('click',function(ev){
 <section class="wrap block">
   <article class="product">
     <div class="p-gallery">
-      <img class="p-main" id="pmain" src="../assets/shop/budget_cover.jpg" alt="สมุดรายรับรายจ่าย">
+      <div class="p-mainwrap"><span class="msticker big" aria-label="สมัครสมาชิกรับฟรี"><small>สมัครสมาชิก</small><b>รับฟรี!</b></span><img class="p-main" id="pmain" src="../assets/shop/budget_cover.jpg" alt="สมุดรายรับรายจ่าย"></div>
       <div class="p-thumbs"><button type="button" data-src="../assets/shop/budget_cover.jpg" class=on><img src="../assets/shop/budget_cover.jpg" alt="ปก"></button><button type="button" data-src="../assets/shop/budget_dashboard.jpg"><img src="../assets/shop/budget_dashboard.jpg" alt="หน้าสรุปเดือน · งบรายหมวดและกราฟ"></button><button type="button" data-src="../assets/shop/budget_log.jpg"><img src="../assets/shop/budget_log.jpg" alt="หน้าจดรายการ · เลือกหมวดจากรายการ"></button></div>
     </div>
     <div class="p-info">
@@ -61,8 +61,8 @@ document.addEventListener('click',function(ev){
       <div class="p-price"><b>฿79</b><span>จ่ายครั้งเดียว · รับไฟล์ทางอีเมลใน 10 นาที</span></div>
       <a class="btn yellow shop-buy" href="https://buy.stripe.com/28E5kD3zp9hu6L4cB13oA02" target="_blank" rel="noopener">ซื้อเลย ฿79</a>
       <div class="p-member">
-  <b>สมาชิกเพจรับฟรีเดือนละ 3 ชิ้น</b>
-  <p>สมัครสมาชิก The Simple Past เดือนละ ฿35 รับสินค้าดิจิทัลของเดือนนั้นฟรี 3 ชิ้น (ธันวาคม: Christmas Planner · Vision Board 2027 · สมุดรายรับรายจ่าย) และชื่อของคุณจะขึ้นขอบคุณท้ายคลิป</p>
+  <b>สมาชิก ฿35/เดือน</b>
+  <p>รับของแจกเดือนละ 3 ชิ้น</p>
   <a class="btn fb" href="https://www.facebook.com/100082024890340/subscribe/" target="_blank" rel="noopener">สมัครสมาชิก ฿35/เดือน</a>
 </div>
       <ul class="p-list"><li><b>จดรายการ</b> วันที่ · รายรับ/รายจ่าย · หมวด · จำนวนเงิน · จ่ายด้วยอะไร</li><li><b>สรุปเดือน</b> รายรับ รายจ่าย คงเหลือ % ออม งบรายหมวดพร้อมแถบสี โดนัทแยกหมวด 5 รายการที่จ่ายเยอะสุด</li><li><b>ทั้งปี</b> ตาราง 12 เดือน กราฟแท่ง และตารางหมวด × เดือน</li><li><b>บิลประจำ · เป้าหมายออม</b> ติ๊กจ่ายแล้ว เลยกำหนดขึ้นแดง · บอกว่าต้องเก็บเดือนละเท่าไร</li><li><b>ตั้งค่าเองได้</b> แก้ชื่อหมวด เพิ่มหมวด ตั้งงบต่อเดือน</li></ul>
@@ -75,13 +75,13 @@ document.addEventListener('click',function(ev){
     </div>
   </article>
 </section>
-<section class="wrap block"><div class="sec-head"><h2><span class="hl">สินค้าอื่น</span></h2></div><div class="pgrid"><a class="pcard" href="christmas-planner.html"><div class="pc-img"><span class="pc-badge">ใหม่</span><img src="assets/shop/xmas_cover_mockup.jpg" alt="Christmas Planner" loading="lazy"></div>
+<section class="wrap block"><div class="sec-head"><h2><span class="hl">สินค้าอื่น</span></h2></div><div class="pgrid"><a class="pcard" href="christmas-planner.html"><div class="pc-img"><span class="pc-badge">ใหม่</span><span class="msticker" aria-label="สมัครสมาชิกรับฟรี"><small>สมัครสมาชิก</small><b>รับฟรี!</b></span><img src="assets/shop/xmas_cover_mockup.jpg" alt="Christmas Planner" loading="lazy"></div>
   <div class="pc-body"><span class="pc-type">สติกเกอร์ดิจิทัล · ไฟล์ PNG</span><span class="pc-title">Christmas Planner</span>
   <span class="pc-short">สติกเกอร์วางแผนเดือนธันวาคม 38 ชิ้น พร้อมตัวละครประวัติศาสตร์ฉลองคริสต์มาส</span>
-  <span class="pc-foot"><b>฿39</b><span class="pc-free">สมาชิกฟรี</span></span></div></a><a class="pcard" href="vision-board-2027.html"><div class="pc-img"><span class="pc-badge">ใหม่</span><img src="assets/shop/vision_cover.jpg" alt="Vision Board 2027" loading="lazy"></div>
+  <span class="pc-foot"><b>฿39</b></span></div></a><a class="pcard" href="vision-board-2027.html"><div class="pc-img"><span class="pc-badge">ใหม่</span><span class="msticker" aria-label="สมัครสมาชิกรับฟรี"><small>สมัครสมาชิก</small><b>รับฟรี!</b></span><img src="assets/shop/vision_cover.jpg" alt="Vision Board 2027" loading="lazy"></div>
   <div class="pc-body"><span class="pc-type">เทมเพลต + สติกเกอร์ดิจิทัล · PDF / PNG</span><span class="pc-title">Vision Board 2027</span>
   <span class="pc-short">เทมเพลต Vision Board แบบปะติด 2 หน้า + สติกเกอร์ 32 ชิ้น ตัวละครประวัติศาสตร์ช่วยให้กำลังใจทั้งปี</span>
-  <span class="pc-foot"><b>฿59</b><span class="pc-free">สมาชิกฟรี</span></span></div></a></div></section>
+  <span class="pc-foot"><b>฿59</b></span></div></a></div></section>
 <script>document.querySelectorAll('.p-thumbs button').forEach(function(b){b.addEventListener('click',function(){document.getElementById('pmain').src=b.dataset.src;document.querySelectorAll('.p-thumbs button').forEach(function(x){x.classList.toggle('on',x===b)});});});</script>
 </main>
 <footer class="foot-bar">

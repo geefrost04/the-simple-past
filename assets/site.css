@@ -226,3 +226,12 @@ a.pcard:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
 .mb-item img{width:100%;aspect-ratio:1/1;object-fit:cover;border:2px solid var(--ink);border-radius:12px;box-shadow:3px 3px 0 var(--ink)}
 .mb-item:hover img{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--ink)}
 @media (max-width:760px){.mbanner{flex-direction:column;align-items:stretch;padding:18px}.mb-head{flex:none}.mb-items{gap:10px}.mb-item{font-size:13px}}
+/* sticker sits on the very corner, half off the edge (owner 23 Nov) */
+.pcard{overflow:visible}
+.pc-img{overflow:hidden;border-radius:14px 14px 0 0}
+.pc-img .msticker{top:6px;right:6px}
+a.pcard .pc-img{overflow:visible}
+.pcard .msticker{top:-18px;right:-18px}
+.p-mainwrap .msticker.big{top:-22px;right:-22px}
+@media (max-width:560px){.pcard .msticker{top:-12px;right:-10px}.p-mainwrap .msticker.big{top:-14px;right:-8px}}
+.pc-img img{border-radius:14px 14px 0 0}

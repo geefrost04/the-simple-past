@@ -110,3 +110,22 @@ section.block{padding:32px 0}
 .post h3{font-size:26px;font-weight:800}
 .post p{margin:0;font-size:18px;line-height:1.75}
 .post .meta{font-size:14px;color:var(--muted)}
+
+/* story-page wallpaper set (23 Nov redesign) */
+.wset-sec{display:flex;flex-direction:column;gap:6px}
+.wset-h{font-size:30px;font-weight:900}
+.wset-sub{color:var(--ink);opacity:.75;margin-bottom:12px}
+.wset{display:flex;gap:24px;align-items:flex-end;flex-wrap:wrap}
+.wset-item{margin:0;display:flex;flex-direction:column;gap:10px;background:#fff;border:2px solid var(--ink);border-radius:20px;padding:14px;box-shadow:4px 4px 0 var(--ink)}
+.wset-item figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:16px}
+.wset-item figcaption span{font-size:13px;opacity:.65;white-space:nowrap}
+.wset-img{display:block}
+.wset-img img{display:block;width:100%;height:100%;object-fit:cover;border-radius:12px;border:1.5px solid var(--ink)}
+.wset-item.phone{flex:0 0 250px}
+.wset-item.phone .wset-img{aspect-ratio:9/16}
+.wset-item.desk{flex:1 1 420px}
+.wset-item.desk .wset-img{aspect-ratio:16/9}
+.wset-btn{justify-content:center;text-align:center;white-space:nowrap;background:var(--yellow,#ffd84d);color:var(--ink);font-size:16px;padding:10px 14px}
+.wset-btn:hover{background:var(--ink);color:var(--paper)}
+@media (min-width:760px){.wset{flex-wrap:nowrap;align-items:stretch}.wset-item.phone,.wset-item.desk{flex:0 0 auto}.wset-img{height:clamp(260px,32vw,380px);width:auto}.wset-item .wset-img img{width:auto;height:100%}}
+@media (max-width:759px){.wset-h{font-size:24px}.wset{flex-direction:column;align-items:stretch}.wset-item.phone{flex:none;width:min(280px,100%);align-self:center}.wset-item.desk{flex:none}}

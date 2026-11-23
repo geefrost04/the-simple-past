@@ -1,0 +1,112 @@
+/* The Simple Past website — design A "สมุดกระดาษตาราง" (owner pick 22 Nov 2026) */
+:root{--paper:#f4ecdc;--line:#e2d5bd;--ink:#1d1a16;--red:#b3261e;--yellow:#ffd23f;--muted:#5c5345;--card:#fff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Sarabun,sans-serif;color:var(--ink);background-color:var(--paper);
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:28px 28px;line-height:1.6}
+a{color:var(--ink)}a:hover{color:var(--red)}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.h{font-family:Prompt,sans-serif}
+/* header */
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:Prompt,sans-serif;font-weight:800;font-size:22px}
+.brand img{width:52px;height:52px;border-radius:50%}
+.nav{display:flex;flex-wrap:wrap;gap:4px;font-family:Prompt,sans-serif;font-weight:600;font-size:16px}
+.nav a{color:var(--ink);text-decoration:none;padding:9px 14px;border:2px solid transparent;border-radius:10px}
+.nav a:hover{background:var(--yellow);color:var(--ink)}
+.nav a.on{background:var(--yellow);border-color:var(--ink)}
+.nav a.follow{background:var(--red);color:#fff;border-radius:10px;padding:10px 16px;border-bottom:0}
+/* buttons and labels */
+.btn{display:inline-block;font-family:Prompt,sans-serif;font-weight:800;font-size:18px;padding:13px 22px;border-radius:12px;text-decoration:none;border:2px solid var(--ink)}
+.btn.red{background:var(--red);color:#fff;border-color:var(--red)}
+.btn.white{background:#fff}
+.btn.dark{background:var(--ink);color:var(--paper)}
+.btn.yt{background:#c4302b;color:#fff;border-color:#c4302b}
+.btn.fb{background:#1877f2;color:#fff;border-color:#1877f2}
+.btn:hover{filter:brightness(1.08);color:inherit}
+.btn.red:hover,.btn.yt:hover,.btn.fb:hover{color:#fff}
+.tag{display:inline-block;font-family:Prompt,sans-serif;font-weight:600;font-size:15px;background:var(--yellow);padding:5px 12px;border:2px solid var(--ink);border-radius:8px}
+.hl{background:var(--yellow);padding:0 10px}
+h1,h2,h3{font-family:Prompt,sans-serif;line-height:1.2;margin:0}
+/* hero */
+.hero{display:flex;flex-wrap:wrap;gap:36px;align-items:center;padding:24px 0 48px}
+.hero .txt{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.hero h1{font-weight:900;font-size:clamp(44px,7vw,64px);line-height:1.1}
+.hero p{margin:0;font-size:20px;max-width:520px}
+.hero .feature{flex:1 1 460px;min-width:0;display:block;background:#fff;padding:12px 12px 16px;border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0 var(--ink);text-decoration:none}
+.hero .feature img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px}
+.hero .feature .cap{display:flex;justify-content:space-between;gap:8px;padding-top:12px;font-family:Prompt,sans-serif}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+section.block{padding:32px 0}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:10px;margin-bottom:18px}
+.sec-head h2{font-weight:900;font-size:clamp(28px,4vw,36px)}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{background:var(--card);border:2px solid var(--ink);border-radius:14px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#ddd}
+.card .body{padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.card .meta{font-size:14px;color:var(--muted)}
+.card .t{font-family:Prompt,sans-serif;font-weight:800;font-size:19px}
+.card .q{font-size:16px;line-height:1.5}
+/* wallpapers */
+.walls{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}
+.wall{display:flex;flex-direction:column;gap:10px}
+.wall img{width:100%;aspect-ratio:9/16;object-fit:cover;border:2px solid var(--ink);border-radius:16px}
+.wall .foot{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:15px}
+/* boxes */
+.box{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:24px}
+.box .txt{flex:1 1 320px;min-width:0}
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:22px}
+.filters input{flex:1 1 260px;min-width:0;font-family:Sarabun,sans-serif;font-size:17px;padding:12px 16px;border:2px solid var(--ink);border-radius:10px;background:#fff}
+.chip{font-family:Prompt,sans-serif;font-weight:600;font-size:16px;padding:9px 16px;border:2px solid var(--ink);border-radius:999px;background:#fff;cursor:pointer;color:var(--ink)}
+.chip.on{background:var(--ink);color:var(--paper)}
+.sr{position:absolute;left:-9999px}
+/* story page */
+.story{max-width:980px;margin:0 auto;padding:8px 16px 48px;display:flex;flex-direction:column;gap:24px}
+.story h1{font-weight:900;font-size:clamp(36px,6vw,52px)}
+.story .lead{margin:0;font-size:21px}
+.player-box{background:#fff;padding:12px;border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0 var(--ink)}
+.player{position:relative;width:100%;aspect-ratio:16/9;border:0;border-radius:8px;cursor:pointer;background:#000 center/cover no-repeat;display:flex;align-items:center;justify-content:center;padding:0;overflow:hidden}
+.player .play{width:84px;height:60px;background:#c4302b;border-radius:16px;display:flex;align-items:center;justify-content:center}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:14px 4px 4px;font-family:Prompt,sans-serif;font-size:15px}
+.summary{background:#fff;border:2px solid var(--ink);border-radius:14px;padding:22px 26px}
+.summary p{margin:8px 0 0;font-size:18px;line-height:1.8}
+/* footer */
+.foot-bar{background:var(--ink);color:var(--paper);padding:28px 0;margin-top:24px}
+.foot-bar .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;font-family:Prompt,sans-serif}
+.foot-bar a{color:var(--paper)}
+.soon{display:inline-block;font-family:Prompt,sans-serif;font-weight:600;font-size:15px;background:var(--ink);color:var(--paper);padding:5px 12px;border-radius:8px}
+.ph{aspect-ratio:4/3;background:#e9dfcc;border-bottom:2px dashed #8a7d68;display:flex;align-items:center;justify-content:center;font-family:Prompt,sans-serif;color:var(--muted)}
+@media (max-width:600px){.nav a{padding:8px 8px;font-size:15px}.brand{font-size:19px}.brand img{width:44px;height:44px}}
+/* 22 Nov colour pass: red = nav + main action only; yellow = highlight/labels; topics get soft tints of equal lightness */
+.about{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.about .it{background:#fff;border:2px solid var(--ink);border-radius:14px;padding:20px 22px;display:flex;flex-direction:column;gap:8px}
+.about .num{font-family:Prompt,sans-serif;font-weight:900;font-size:15px;color:var(--red);letter-spacing:1px}
+.about h3{font-size:22px;font-weight:800}
+.about p{margin:0;font-size:17px;color:var(--muted)}
+.topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
+.topic{display:flex;flex-direction:column;gap:4px;padding:18px 20px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;box-shadow:4px 4px 0 var(--ink);transition:transform .15s}
+.topic:hover{transform:translate(-2px,-2px);color:var(--ink)}
+.topic .n{font-family:Prompt,sans-serif;font-weight:800;font-size:22px}
+.topic .c{font-size:15px;color:var(--muted)}
+.t-ลอบสังหาร{background:#f6d8d2}.t-โลกโบราณ{background:#f4e3b8}.t-สงคราม{background:#dfe2cf}.t-จักรวรรดิ{background:#d7e4e7}.t-สายลับ{background:#e4dcea}
+.card .meta .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;border:1px solid var(--ink);vertical-align:middle}
+.wall .foot .btn{background:#fff;color:var(--ink)}
+.wall .foot .btn:hover{background:var(--ink);color:var(--paper)}
+.hero h1 .red{background:var(--yellow);padding:0 12px;border-radius:6px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.btn.yellow{background:var(--yellow);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.btn.yellow:hover{color:var(--ink)}
+/* desktop wallpapers + posts (22 Nov) */
+.walls-desk{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:20px}
+.wall.desk img{aspect-ratio:16/9}
+@media (max-width:600px){.walls-desk{grid-template-columns:1fr}}
+.posts{display:flex;flex-direction:column;gap:24px}
+.post{display:flex;flex-wrap:wrap;gap:24px;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:20px;align-items:flex-start}
+.post img{flex:0 1 320px;width:320px;max-width:100%;border:2px solid var(--ink);border-radius:10px}
+.post .body{flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.post h3{font-size:26px;font-weight:800}
+.post p{margin:0;font-size:18px;line-height:1.75}
+.post .meta{font-size:14px;color:var(--muted)}

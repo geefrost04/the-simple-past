@@ -25,7 +25,7 @@ document.addEventListener('click',function(ev){
   if(a.hasAttribute('download')){gtag('event','wallpaper_download',{file_name:h.split('/').pop(),page_path:location.pathname});return;}
   if(h.indexOf('facebook.com')>-1)gtag('event','follow_click',{platform:'facebook',page_path:location.pathname});
   else if(h.indexOf('youtube.com')>-1)gtag('event','follow_click',{platform:'youtube',page_path:location.pathname});
-});
+},true);
 </script>
 </head>
 <body>

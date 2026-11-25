@@ -73,7 +73,7 @@ document.addEventListener('click',function(ev){
 </article></div>
 </section>
 <section class="wrap block"><div class="box">
-  <div class="txt"><h3 style="font-size:24px">รับวอลเปเปอร์ชุดใหม่ทางอีเมล</h3><p style="margin:6px 0 0;font-size:17px">เดือนละ 1 ครั้ง พร้อมรายชื่อเรื่องที่เพิ่งลง ฟรี</p></div>
+  <div class="txt"><h3 style="font-size:24px">รับสรุปประจำสัปดาห์ทางอีเมล</h3><p style="margin:6px 0 0;font-size:17px">เรื่องใหม่ของสัปดาห์ ข่าวจากช่อง และวอลเปเปอร์ใหม่เมื่อมี ฟรี ไม่ส่งทุกวัน</p></div>
   <form id="mailform" class="row" style="flex:1 1 320px;min-width:0;gap:10px;flex-wrap:wrap" novalidate>
     <input id="mailinput" type="email" inputmode="email" autocomplete="email" required placeholder="อีเมลของคุณ" aria-label="อีเมลของคุณ" style="flex:1 1 200px;min-width:0;font:400 18px Sarabun,sans-serif;padding:13px 14px;border:2px solid var(--ink);border-radius:12px;background:#fff;color:#1d1a16">
     <button id="mailbtn" class="btn dark" type="submit" style="cursor:pointer">รับทางอีเมล</button>
@@ -86,7 +86,7 @@ f.addEventListener('submit',function(ev){ev.preventDefault();var v=i.value.trim(
  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){m.textContent='อีเมลยังไม่ถูกต้อง ลองตรวจอีกครั้งครับ';i.focus();return;}
  b.disabled=true;m.textContent='กำลังบันทึก...';
  var d=new URLSearchParams();d.append('entry.125320446',v);
- fetch('https://docs.google.com/forms/d/e/1FAIpQLSc32kLmtyZlJUjm_ogOy8akGN-MpoRCfdqq4C6GAr9jgKgkNg/formResponse',{method:'POST',mode:'no-cors',body:d}).then(function(){m.textContent='บันทึกแล้ว ขอบคุณครับ เราจะส่งวอลเปเปอร์ชุดใหม่ให้ทางอีเมลนี้';i.value='';b.disabled=false;
+ fetch('https://docs.google.com/forms/d/e/1FAIpQLSc32kLmtyZlJUjm_ogOy8akGN-MpoRCfdqq4C6GAr9jgKgkNg/formResponse',{method:'POST',mode:'no-cors',body:d}).then(function(){m.textContent='บันทึกแล้ว ขอบคุณครับ เราจะส่งสรุปประจำสัปดาห์ให้ทางอีเมลนี้';i.value='';b.disabled=false;
   if(window.gtag)gtag('event','email_signup',{page_path:location.pathname});
  }).catch(function(){m.textContent='บันทึกไม่สำเร็จ ลองใหม่อีกครั้ง หรือทักเพจ The Simple Past ได้เลยครับ';b.disabled=false;});});})();
 </script>
